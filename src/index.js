@@ -3,12 +3,19 @@ console.log("This is the Chalanger Of Hero - DIO")
 console.log("Our Hero, currently is on the **Fase 4** the he journey")
 console.log("Let's check your rating together?")
 
-let password = 5999
+let userInput = readLine("Digite um valor numérico de 4 dígitos:");
+// Verificar se o valor tem 4 dígitos
+if (/^\d{4}$/.test(userInput)) {
+    console.log("Entrada válida: " + userInput);
+} else {
+    console.log("Por favor, digite um valor numérico de 4 dígitos.");
+}
+userInput = password
+let password = 
 console.log(password)
 
 if (password == 1000){
         console.log("Ferro");
-
     } else if (password >= 1001 && password <= 2000) {
         console.log("Bronze");
     } else if (password >= 2001 && password <= 5000) {
