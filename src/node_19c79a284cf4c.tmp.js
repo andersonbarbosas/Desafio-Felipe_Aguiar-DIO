@@ -3,22 +3,29 @@ console.log("This is the Chalanger Of Hero - DIO")
 console.log("Our Hero, currently is on the **Fase 4** the he journey")
 console.log("Let's check your rating together?")
 
+const readline = require('readline');
 
-let hou = new Date()
-let sem = new Date()
-let mon = new Date()
-let sec = new Date()
-diaSem = sem.getDay() + 1
-diaHou = hou.getHours() + 1
-diaSec = sec.getSeconds() + 1
-diaMon = mon.getMonth() + 1
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-console.log()
-let password = (diaSec * diaMon + diaHou + diaSem * (diaSec * diaSec))
-console.log(`The Level of Our Hero DIO is: ${password}`)
-console.log()
-console.log("And with this Level, Your Sword is of the Class:")
-if (password<= 1000){
+rl.question("Digite um valor numérico de 4 dígitos: ", function(userInput) {
+    // Verificar se o valor tem 4 dígitos
+    if (/^\d{4}$/.test(userInput)) {
+        console.log("Entrada válida: " + userInput);
+    } else {
+        console.log("Por favor, digite um valor numérico de 4 dígitos.");
+    }
+
+    rl.close();
+});
+
+
+let password = 0
+console.log(password)
+
+if (password == 1000){
         console.log("Ferro");
     } else if (password >= 1001 && password <= 2000) {
         console.log("Bronze");
@@ -35,16 +42,11 @@ if (password<= 1000){
     } else if (password >= 10001) {
         console.log("Radiante");
 }
-console.log()
-console.log("Agradeçemos pelos seus Serviços Heroicos. Thank Youuu!!!")
-console.log()
-console.log("E se você tentasse mais uma vez?")
+
+
+function UserName(){
+    console.log()
 
 
 
-/*
-console.log(diaSem)
-console.log(diaHou)
-console.log(diaMon)
-console.log(diaSec)
-*/
+}
