@@ -15,7 +15,7 @@ diaMon = mon.getMonth() + 1
 
 console.log()
 let password = (diaSec * diaMon + diaHou + diaSem * (diaSec * diaSec))
-console.log(`The Level of Our Hero DIO is: ${password}`)
+console.log(`The Level of Our Hero DIO is: ${password}XP`)
 console.log()
 console.log("And with this Level, Your Sword is of the Class:")
 if (password<= 1000){
