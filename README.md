@@ -1,6 +1,9 @@
 # Desafio do Herói - DIO
+**Desafio 1** - Calculando o Nível do Herói.
 
 Bem-vindo ao repositório GitHub do Desafio do Herói - DIO! Este é um programa simples em JavaScript que calcula o nível e a classe da espada do nosso herói com base na data e hora atual.
+
+Esse projeto faz parte do desafio para avaliação dos alunos da plataforma DIO durante o ***Potência Tech iFood - Programação do Zero.***
 
 ## O Que deveria ser utilizado
 
